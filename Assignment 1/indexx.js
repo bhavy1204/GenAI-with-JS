@@ -1,6 +1,6 @@
 const generateToken = (txt) => {
     let text = txt.toLowerCase();
-    let token = text.match(/[\w]+/g);
+    let token = text.match(/[\w]+|[^\s\w]/g);
     // console.log(token);
     let unique = [...new Set(token)];
     // console.log(unique);
@@ -13,7 +13,7 @@ const generateToken = (txt) => {
 }
 
 const encode = (input, grammar) => {
-    let token = input.match(/[\w]+/g)
+    let token = input.match(/[\w]+|[^\s\w]/g)
     return token.map((t) => grammar[t] || -1)
 }
 
