@@ -1,0 +1,15 @@
+{
+  "name": "practice-day-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bhavy",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "js-tiktoken": "^1.0.21"
+  }
+}
